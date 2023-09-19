@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-10T15:20:25 BST" name="Default Suite" finished-at="2023-09-10T15:20:47 BST" duration-ms="22192">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nopcommerce.demo.runner.RunCuke@3c130745]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-09-10T15:20:25 BST" name="cucumber-8-series-testng" finished-at="2023-09-10T15:20:47 BST" duration-ms="22192">
+      <class name="com.nopcommerce.demo.runner.RunCuke">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.nopcommerce.demo.runner.RunCuke@3c130745]" started-at="2023-09-10T15:20:25 BST" name="setUpClass" finished-at="2023-09-10T15:20:26 BST" duration-ms="1129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@23c05889]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nopcommerce.demo.runner.RunCuke@3c130745]" started-at="2023-09-10T15:20:26 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-10T15:20:34 BST" duration-ms="7899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to the Facebook website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nopcommerce.demo.runner.RunCuke@3c130745]" started-at="2023-09-10T15:20:34 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-10T15:20:38 BST" duration-ms="4598" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should navigate to login page successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login page not displayed expected [Welcome, Please Sign In] but found [Welcome, Please Sign In!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login page not displayed expected [Welcome, Please Sign In] but found [Welcome, Please Sign In!]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.nopcommerce.demo.steps.LoginSteps.iShouldNavigateToLoginPageSuccessfully(LoginSteps.java:33)
+at ✽.I should navigate to login page successfully(file:///C:/Users/jayen/PrimeTesting/PrimeBatch_102/cucumber-8-series-testng/src/test/resources/features/login.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nopcommerce.demo.runner.RunCuke@3c130745]" started-at="2023-09-10T15:20:38 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-10T15:20:44 BST" duration-ms="5743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should login successfully with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.nopcommerce.demo.runner.RunCuke@3c130745]" started-at="2023-09-10T15:20:44 BST" name="tearDownClass" finished-at="2023-09-10T15:20:47 BST" duration-ms="2769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.nopcommerce.demo.runner.RunCuke -->
+    </test> <!-- cucumber-8-series-testng -->
+  </suite> <!-- Default Suite -->
+</testng-results>
